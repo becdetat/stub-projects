@@ -1,0 +1,105 @@
+@mixin mobile { @media (max-width: $screen-xs-max) { @content; } }
+@mixin tablet { @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { @content; } }
+@mixin desktop { @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { @content; } }
+@mixin desktop-hd { @media (min-width: $screen-lg-min) { @content; } }
+@mixin mobile-down { @media (max-width: $screen-xs-min) { @content; } }
+@mixin tablet-down { @media (max-width: $screen-sm-max) { @content; } }
+@mixin desktop-down { @media (max-width: $screen-md-max) { @content; } }
+@mixin desktop-hd-down { @media (min-width: $screen-lg-min) { @content; } }
+@mixin smaller-than-mobile { @media (max-width: $screen-xs-min - 1) { @content; } }
+@mixin smaller-than-tablet { @media (max-width: $screen-sm-min - 1) { @content; } }
+@mixin smaller-than-desktop { @media (max-width: $screen-md-min - 1) { @content; } }
+@mixin smaller-than-desktop-hd { @media (max-width: $screen-lg-min - 1) { @content; } }
+@mixin mobile-up { @media (min-width: $screen-xs-min) { @content; } }
+@mixin tablet-up { @media (min-width: $screen-sm-min) { @content; } }
+@mixin desktop-up { @media (min-width: $screen-md-min) { @content; } }
+@mixin desktop-hd-up { @media (min-width: $screen-lg-min) { @content; } }
+@mixin larger-than-mobile { @media (min-width: $screen-xs-max + 1) { @content; } }
+@mixin larger-than-tablet { @media (min-width: $screen-sm-max + 1) { @content; } }
+@mixin larger-than-desktop { @media (min-width: $screen-md-max + 1) { @content; } }
+
+.visible-on-mobile,
+.visible-on-tablet,
+.visible-on-desktop,
+.visible-on-desktop-hd,
+.visible-on-mobile-down,
+.visible-on-tablet-down,
+.visible-on-desktop-down,
+.visible-on-desktop-hd-down,
+.visible-on-smaller-than-mobile,
+.visible-on-smaller-than-tablet,
+.visible-on-smaller-than-desktop,
+.visible-on-smaller-than-desktop-hd,
+.visible-on-mobile-up,
+.visible-on-tablet-up,
+.visible-on-desktop-up,
+.visible-on-desktop-hd-up,
+.visible-on-larger-than-mobile,
+.visible-on-larger-than-tablet,
+.visible-on-larger-than-desktop {
+	display: none !important;
+}
+
+.visible-on-mobile { @include mobile { display: inherit !important; } }
+.visible-on-tablet { @include tablet { display: inherit !important; } }
+.visible-on-desktop { @include desktop { display: inherit !important; } }
+.visible-on-desktop-hd { @include desktop-hd { display: inherit !important; } }
+.visible-on-mobile-down { @include mobile-down { display: inherit !important; } }
+.visible-on-tablet-down { @include tablet-down { display: inherit !important; } }
+.visible-on-desktop-down { @include desktop-down { display: inherit !important; } }
+.visible-on-desktop-hd-down { @include desktop-hd-down { display: inherit !important; } }
+.visible-on-smaller-than-mobile { @include smaller-than-mobile { display: inherit !important; } }
+.visible-on-smaller-than-tablet { @include smaller-than-tablet { display: inherit !important; } }
+.visible-on-smaller-than-desktop { @include smaller-than-desktop { display: inherit !important; } }
+.visible-on-smaller-than-desktop-hd { @include smaller-than-desktop-hd { display: inherit !important; } }
+.visible-on-mobile-up { @include mobile-up { display: inherit !important; } }
+.visible-on-tablet-up { @include tablet-up { display: inherit !important; } }
+.visible-on-desktop-up { @include desktop-up { display: inherit !important; } }
+.visible-on-desktop-hd-up { @include desktop-hd-up { display: inherit !important; } }
+.visible-on-larger-than-mobile { @include larger-than-mobile { display: inherit !important; } }
+.visible-on-larger-than-tablet { @include larger-than-tablet { display: inherit !important; } }
+.visible-on-larger-than-desktop { @include larger-than-desktop { display: inherit !important; } }
+
+.hidden-on-mobile,
+.hidden-on-tablet,
+.hidden-on-desktop,
+.hidden-on-desktop-hd,
+.hidden-on-mobile-down,
+.hidden-on-tablet-down,
+.hidden-on-desktop-down,
+.hidden-on-desktop-hd-down,
+.hidden-on-smaller-than-mobile,
+.hidden-on-smaller-than-tablet,
+.hidden-on-smaller-than-desktop,
+.hidden-on-smaller-than-desktop-hd,
+.hidden-on-mobile-up,
+.hidden-on-tablet-up,
+.hidden-on-desktop-up,
+.hidden-on-desktop-hd-up,
+.hidden-on-larger-than-mobile,
+.hidden-on-larger-than-tablet,
+.hidden-on-larger-than-desktop {
+	display: inherit !important;
+}
+
+.hidden-on-mobile { @include mobile { display: none !important; } }
+.hidden-on-tablet { @include tablet { display: none !important; } }
+.hidden-on-desktop { @include desktop { display: none !important; } }
+.hidden-on-desktop-hd { @include desktop-hd { display: none !important; } }
+.hidden-on-mobile-down { @include mobile-down { display: none !important; } }
+.hidden-on-tablet-down { @include tablet-down { display: none !important; } }
+.hidden-on-desktop-down { @include desktop-down { display: none !important; } }
+.hidden-on-desktop-hd-down { @include desktop-hd-down { display: none !important; } }
+.hidden-on-smaller-than-mobile { @include smaller-than-mobile { display: none !important; } }
+.hidden-on-smaller-than-tablet { @include smaller-than-tablet { display: none !important; } }
+.hidden-on-smaller-than-desktop { @include smaller-than-desktop { display: none !important; } }
+.hidden-on-smaller-than-desktop-hd { @include smaller-than-desktop-hd { display: none !important; } }
+.hidden-on-mobile-up { @include mobile-up { display: none !important; } }
+.hidden-on-tablet-up { @include tablet-up { display: none !important; } }
+.hidden-on-desktop-up { @include desktop-up { display: none !important; } }
+.hidden-on-desktop-hd-up { @include desktop-hd-up { display: none !important; } }
+.hidden-on-larger-than-mobile { @include larger-than-mobile { display: none !important; } }
+.hidden-on-larger-than-tablet { @include larger-than-tablet { display: none !important; } }
+.hidden-on-larger-than-desktop { @include larger-than-desktop { display: none !important; } }
+
+

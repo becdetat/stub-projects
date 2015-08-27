@@ -1,0 +1,14 @@
+body {
+	color: $color-text-primary;
+}
+
+a {
+	color: $color-secondary-t1;
+	@include transition (color 200ms ease-in-out);
+
+	&:hover {
+		color: $color-secondary;
+		text-decoration: none;
+		@include transition (color 200ms ease-in-out);
+	}
+}

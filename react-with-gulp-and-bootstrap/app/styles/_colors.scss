@@ -1,0 +1,35 @@
+$color-dark: #333;
+$color-light: #fff;
+$color-green: #88CC1D;
+$color-purple: #D73DFF;
+
+$color-background-light: $color-light;
+$color-background-light-t1: darken($color-background-light, 20%);
+$color-background-light-t2: darken($color-background-light, 40%);
+$color-background-light-t3: darken($color-background-light, 60%);
+$color-background-dark: $color-dark;
+$color-background-dark-t1: lighten($color-background-dark, 20%);
+$color-background-dark-t2: lighten($color-background-dark, 40%);
+$color-background-dark-t3: lighten($color-background-dark, 60%);
+
+$color-text-primary: $color-dark;
+$color-text-primary-t1: lighten($color-text-primary, 20%);
+$color-text-primary-t2: lighten($color-text-primary, 40%);
+$color-text-primary-t3: lighten($color-text-primary, 60%);
+
+$color-text-secondary: $color-light;
+$color-text-secondary-t1: darken($color-text-secondary, 20%);
+$color-text-secondary-t2: darken($color-text-secondary, 40%);
+$color-text-secondary-t3: darken($color-text-secondary, 60%);
+
+$color-primary: darken($color-purple, 20%);
+$color-primary-t0: darken($color-primary, 20%);
+$color-primary-t1: lighten($color-primary, 20%);
+$color-primary-t2: lighten($color-primary, 40%);
+$color-primary-t3: lighten($color-primary, 60%);
+
+$color-secondary: darken($color-green, 10%);
+$color-secondary-t0: darken($color-secondary, 20%);
+$color-secondary-t1: lighten($color-secondary, 20%);
+$color-secondary-t2: lighten($color-secondary, 40%);
+$color-secondary-t3: lighten($color-secondary, 60%);

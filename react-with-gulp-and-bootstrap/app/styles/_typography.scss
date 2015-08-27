@@ -1,0 +1,34 @@
+$font-header: inherit;
+$font-body: inherit;
+
+body { 
+	font-family: $font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-header;
+}
+
+a {
+	color: $color-secondary;
+
+	&:hover {
+		color: $color-secondary-t0;
+	}
+}
+
+.fineprint {
+	font-size: smaller;
+}
+
+.nav,
+.pagination,
+.carousel,
+.panel-title a,
+a { 
+	cursor: pointer;
+}
+
+.ng-cloak {
+    display: none !important;
+}

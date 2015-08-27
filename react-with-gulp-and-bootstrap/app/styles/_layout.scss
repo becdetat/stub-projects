@@ -1,0 +1,17 @@
+body {
+	background-color: $color-background-dark;
+}
+
+.content-well {
+	background-color: $color-background-light;
+	border-radius: 10px;
+
+	@include larger-than-mobile {
+		margin-top: 2em;
+	}
+
+	.footer {
+		text-align: center;
+		padding: 1.5em 0;
+	}
+}
